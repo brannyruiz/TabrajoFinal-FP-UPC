@@ -423,7 +423,7 @@ public class MenuReserva {
 
                         for (int i = 0; i < 1; i++) {
 
-                            for (int j = 0; j < 5; j++) {
+                            for (int j = 0; j < 9; j++) {
 
 
                                 if ((miercoles[0][j].substring(8, 11).equals("LIB"))) {
@@ -450,7 +450,7 @@ public class MenuReserva {
 
                         for (int i = 0; i < 1; i++) {
 
-                            for (int j = 0; j < 5; j++) {
+                            for (int j = 0; j < 9; j++) {
 
 
                                 if ((martes[0][j].substring(8, 11).equals("LIB"))) {
@@ -555,7 +555,7 @@ public class MenuReserva {
 
                         for (int i = 1; i < 2; i++) {
 
-                            for (int j = 0; j < 5; j++) {
+                            for (int j = 0; j < 9; j++) {
 
 
                                 if ((miercoles[i][j].substring(8, 11).equals("LIB"))) {
@@ -599,7 +599,6 @@ public class MenuReserva {
                             }
                             System.out.println(contadordhora4);
 
-
                         }
                     }
 
@@ -607,7 +606,7 @@ public class MenuReserva {
                     if (dia.equals("martes")) {
 
                         for (int i = 1; i < 2; i++) {
-                            for (int j = 0; j < 5; j++) {
+                            for (int j = 0; j < 9; j++) {
                                 if ((martes[i][j].substring(8, 11).equals("LIB"))) {
                                     contadordhora5 += 1;
                                 }
@@ -644,7 +643,6 @@ public class MenuReserva {
                                 if (contadordhora13 > 0) {
                                     disponibilidadhora = "si";
 
-
                                 }
 
 
@@ -673,14 +671,10 @@ public class MenuReserva {
 
                                 if ((viernes[i][j].substring(8, 11).equals("LIB"))) {
                                     contadordhora14 += 1;
-
-
                                 }
 
                                 if (contadordhora14 > 0) {
                                     disponibilidadhora = "si";
-
-
                                 }
 
 
@@ -696,11 +690,7 @@ public class MenuReserva {
                         }
                     }
 
-
-
-
                     break;
-
 
                 case 2:
 
@@ -713,25 +703,21 @@ public class MenuReserva {
 
                         for (int i = 2; i < 3; i++) {
 
-                            for (int j = 0; j < 5; j++) {
+                            for (int j = 0; j < 9; j++) {
 
 
                                 if ((miercoles[2][j].substring(8, 11).equals("LIB"))) {
                                     contadordhora15 += 1;
-
 
                                 }
 
                                 if (contadordhora15 > 0) {
                                     disponibilidadhora = "si";
 
-
                                 }
 
 
                             }
-
-
 
 
                             if (disponibilidadhora.equals("si")) {
@@ -756,21 +742,14 @@ public class MenuReserva {
 
                                 if ((martes[2][j].substring(8, 11).equals("LIB"))) {
                                     contadordhora16 += 1;
-
-
                                 }
 
                                 if (contadordhora16 > 0) {
                                     disponibilidadhora = "si";
-
-
                                 }
 
 
                             }
-
-
-
 
                             if (disponibilidadhora.equals("si")) {
                                 System.out.println("Hay  mesa disponible para la hora 2:00 pm");
@@ -779,18 +758,8 @@ public class MenuReserva {
                             }
                             System.out.println(contadordhora16);
 
-
                         }
                     }
-
-
-
-
-
-
-
-
-
 
                     int contadordhora17 = 0;
                     if (dia.equals("lunes")) {
@@ -802,17 +771,11 @@ public class MenuReserva {
 
                                 if ((lunes[2][j].substring(8, 11).equals("LIB"))) {
                                     contadordhora16 += 1;
-
-
                                 }
 
                                 if (contadordhora16 > 0) {
                                     disponibilidadhora = "si";
-
-
                                 }
-
-
                             }
                             if (disponibilidadhora.equals("si")) {
                                 System.out.println("Hay  mesa disponible para la hora 2:00 pm");
@@ -835,16 +798,11 @@ public class MenuReserva {
 
                                 if ((jueves[i][j].substring(8, 11).equals("LIB"))) {
                                     contadordhora19 += 1;
-
-
                                 }
 
                                 if (contadordhora19 > 0) {
                                     disponibilidadhora = "si";
-
-
                                 }
-
 
                             }
                             if (disponibilidadhora.equals("si")) {
@@ -853,8 +811,6 @@ public class MenuReserva {
                                 System.out.println("No Hay  mesa disponible para la hora 2:00 pm");
                             }
                             System.out.println(contadordhora17);
-
-
                         }
                     }
 
@@ -869,43 +825,22 @@ public class MenuReserva {
 
                                 if ((viernes[i][j].substring(8, 11).equals("LIB"))) {
                                     contadordhora18 += 1;
-
-
                                 }
 
                                 if (contadordhora18 > 0) {
                                     disponibilidadhora = "si";
-
-
                                 }
-
-
-                            }}
+                            }
+                        }
                         if (disponibilidadhora.equals("si")) {
                             System.out.println("Hay  mesa disponible para la hora 2:00 pm");
                         } else {
                             System.out.println("No Hay  mesa disponible para la hora 2:00 pm");
                         }
                         System.out.println(contadordhora18);
-
-
-
                     }
 
-
-
-
-
-
-
-
-
-
-
-
-
                     break;
-
             }
         }
         String tipodemesa="0";
@@ -948,11 +883,6 @@ public class MenuReserva {
             System.out.println("elige el tipo de mesa(2, 4, 6): ");
             tipodemesa=scan.nextLine();
             Disponibilidadmesas=CONSULTAmesa(dia,quedia,horaelegida,tipodemesa);
-
-
-
-
-
         }
 
 
@@ -967,14 +897,9 @@ public class MenuReserva {
 
     public static  String CONSULTAmesa(String dia, String[][] quedia, int hora, String tipodemesa1){
 
-
-
-
         String disponible="no";
 
         switch (dia){
-
-
 
             case "martes":
                 int contadormesa=0;
@@ -988,18 +913,14 @@ public class MenuReserva {
                         if ( quedia[hora][j].substring(7,8).equals(tipodemesa1) && quedia[hora][j].substring(8,11).equals("LIB") ) {
                             contadormesa += 1;
 
-
-
-
                         }
                         if (contadormesa>0){
                             disponible="si";
 
-
                         }
 
-
-                    }}
+                    }
+                }
                 System.out.println("hay " + contadormesa + " mesas disponibles");
                 break;
 
@@ -1014,15 +935,9 @@ public class MenuReserva {
 
                         if ( quedia[hora][j].substring(7,8).equals(tipodemesa1) && quedia[hora][j].substring(8,11).equals("LIB") ) {
                             contadormesa1 += 1;
-
-
-
-
                         }
                         if (contadormesa1>0){
                             disponible="si";
-
-
                         }
 
 
@@ -1041,24 +956,14 @@ public class MenuReserva {
 
                         if ( quedia[hora][j].substring(7,8).equals(tipodemesa1) && quedia[hora][j].substring(8,11).equals("LIB") ) {
                             contadormesa12 += 1;
-
-
-
-
                         }
                         if (contadormesa12>0){
                             disponible="si";
-
-
                         }
 
 
                     }}
                 System.out.println("hay " + contadormesa12 + " mesas disponibles");
-
-
-
-
 
         }
 
@@ -1078,9 +983,7 @@ public class MenuReserva {
             for (int j = 0; j < 9; j++) {
                 if (lunes[i][j].substring(8, 11).equals("RES")) {
                     contadorl -= 1;
-
                 }
-
             }
         }
         System.out.println("hay " + contadorl + " opciones disponibles");
@@ -1102,11 +1005,8 @@ public class MenuReserva {
 
                 if ((martes[i][j].substring(8, 11).equals("RES"))) {
                     contadorm -= 1;
-
                 }
-
-
-            }
+           }
 
             if (contadorm == 0) {
                 disponiblemartes = "no";
@@ -1131,8 +1031,6 @@ public class MenuReserva {
                     contadormi -= 1;
 
                 }
-
-
         }
         System.out.println("hay " + contadormi + " mesas disponibles");
 
@@ -1177,13 +1075,11 @@ public class MenuReserva {
         String disponibleviernes = "si";
 
         for (int i = 0; i < 7; i++) {
-            for (int j = 0; j < 9; j++)
+            for (int j = 0; j < 9; j++){
                 if (viernes[i][j].substring(8, 11).equals("RES")) {
                     contadorvi -= 1;
-
                 }
-
-
+            }
         }
         System.out.println("hay " + contadorvi + " opciones disponibles");
 
@@ -1191,10 +1087,7 @@ public class MenuReserva {
             disponibleviernes = "no";
         }
         return disponibleviernes;
-
     }
-
-
 
 
     public static int confirmaryreservar(String[][] quedia, int hora, String tipodemesa1){
@@ -1207,24 +1100,11 @@ public class MenuReserva {
 
                 if ( quedia[hora][j].substring(7,8).equals(tipodemesa1) && quedia[hora][j].substring(8,11).equals("LIB") ){
                     while (contador<1) {
-
-
-
-
                         contador += 1;
                         System.out.println("Usted Reservo la mesa : " + quedia[hora][j].substring(5,6));
-
-
                     }
-
-
-
                 }
-
-
             }
-
-
         }
 
         return contador;}}
